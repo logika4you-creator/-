@@ -1,259 +1,304 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Maze Runner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <title>The Maze Runner</title>
 
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
-    color:#222;
-}
+    <style>
 
-/* HEADER */
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+            color:#222;
+        }
 
-header{
-    background:linear-gradient(90deg,#6a0000,#c2185b,#ff9800);
-    color:white;
+        /* HEADER */
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
+        header{
+            background:linear-gradient(90deg,#5a0000,#c2185b,#ff9800);
+            color:white;
 
-    padding:20px;
-}
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
 
-.menu-list{
-    display:flex;
-    gap:15px;
-    list-style:none;
-    padding:0;
-    margin:0;
-}
+            padding:20px;
+        }
 
-.menu-list a{
-    color:white;
-    text-decoration:none;
-    background:rgba(255,255,255,0.2);
-    padding:10px 15px;
-    border-radius:10px;
-}
+        header h2{
+            margin:0;
+        }
 
-.menu-list a:hover{
-    background:white;
-    color:black;
-}
+        /* MENU */
 
-/* HERO */
+        .menu-list{
+            display:flex;
+            gap:15px;
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
 
-.hero{
-    text-align:center;
-    padding:40px 20px;
-    background:#fff8f0;
-}
+        .menu-list a{
+            text-decoration:none;
+            color:white;
+            background:rgba(255,255,255,0.2);
+            padding:10px 15px;
+            border-radius:10px;
+            transition:0.3s;
+        }
 
-.hero h1{
-    font-size:45px;
-    color:#7a0000;
-}
+        .menu-list a:hover{
+            background:white;
+            color:black;
+        }
 
-.hero p{
-    max-width:900px;
-    margin:auto;
-    line-height:1.7;
-    font-size:20px;
-}
+        /* HERO */
 
-/* BUTTON */
+        .hero{
+            text-align:center;
+            padding:50px 20px;
+            background:#fff8f0;
+        }
 
-.button{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 20px;
-    background:#7a0000;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-}
+        .hero h1{
+            font-size:48px;
+            color:#7a0000;
+        }
 
-/* TITLES */
+        .hero p{
+            max-width:900px;
+            margin:auto;
+            line-height:1.8;
+            font-size:20px;
+        }
 
-.section-title{
-    text-align:center;
-    margin-top:50px;
-    color:#7a0000;
-    font-size:38px;
-}
+        .button{
+            display:inline-block;
+            margin-top:25px;
+            padding:14px 22px;
+            background:#7a0000;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+        }
 
-/* CARDS */
+        .button:hover{
+            background:#c2185b;
+        }
 
-.cards{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
-    padding:30px;
-}
+        /* SECTION TITLE */
 
-.card{
-    width:230px;
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
+        .section-title{
+            text-align:center;
+            font-size:40px;
+            color:#7a0000;
+            margin-top:50px;
+        }
 
-.card img{
-    width:100%;
-    height:270px;
-    object-fit:cover;
-}
+        /* CARDS */
 
-.card h3{
-    text-align:center;
-    color:#7a0000;
-}
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+            padding:30px;
+        }
 
-.card p{
-    text-align:center;
-    padding:0 15px 20px;
-}
+        .card{
+            width:240px;
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
 
-/* LABYRINTH */
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
 
-.labyrinth{
-    background:#e7d4c3;
-    padding:40px;
-    text-align:center;
-    line-height:1.7;
-}
+            transition:0.3s;
+        }
 
-/* FOOTER */
+        .card:hover{
+            transform:translateY(-8px);
+        }
 
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+        .card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
 
-</style>
+        .card h3{
+            text-align:center;
+            color:#7a0000;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            text-align:center;
+            padding:0 15px 20px;
+            line-height:1.5;
+        }
+
+        /* LABYRINTH */
+
+        .labyrinth{
+            background:#e8d7c5;
+            padding:40px;
+            text-align:center;
+            line-height:1.8;
+            margin-top:30px;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+    </style>
 </head>
 
 <body>
 
 <header>
 
-<h2>Той, хто біжить лабіринтом</h2>
+    <h2>Той, хто біжить лабіринтом</h2>
 
-<nav>
-<ul class="menu-list">
-<li><a href="#home">Головна</a></li>
-<li><a href="#heroes">Герої</a></li>
-<li><a href="#labyrinth">Лабіринт</a></li>
-</ul>
-</nav>
+    <nav>
+        <ul class="menu-list">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#heroes">Герої</a></li>
+            <li><a href="#labyrinth">Лабіринт</a></li>
+        </ul>
+    </nav>
 
 </header>
 
 <main>
 
-<section class="hero" id="home">
+    <section class="hero" id="home">
 
-<h1>Ласкаво просимо у світ Maze Runner</h1>
+        <h1>Ласкаво просимо у світ Maze Runner</h1>
 
-<p>
-«Лабіринт змінюється щодня. Чи зможеш ти знайти вихід?»
-Томас прокидається у загадковому місці без спогадів про минуле.
-Разом з іншими підлітками він живе у Глейді — просторі,
-оточеному величезним лабіринтом.
-</p>
+        <p>
+            «Лабіринт змінюється щодня. Чи зможеш ти знайти вихід?»
+            Томас прокидається у загадковому місці без спогадів про минуле.
+            Разом з іншими підлітками він потрапляє до Глейду —
+            місця, оточеного величезним смертельно небезпечним лабіринтом.
+        </p>
 
-<a href="#heroes" class="button">Переглянути героїв</a>
+        <a href="#heroes" class="button">Познайомитися з героями</a>
 
-</section>
+    </section>
 
-<section id="heroes">
+    <section id="heroes">
 
-<h2 class="section-title">Головні герої</h2>
+        <h2 class="section-title">Головні герої</h2>
 
-<div class="cards">
+        <div class="cards">
 
-<div class="card">
+            <!-- THOMAS -->
 
-<!-- ЗАЛІЗНИЙ СПОСІБ -->
-<img src="https://picsum.photos/300/400?random=1" alt="Томас">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/MazeRunnerThomas.jpg" alt="Томас">
 
-<h3>Томас</h3>
+                <h3>Томас</h3>
 
-<p>
-Головний герой, який прагне знайти вихід із лабіринту.
-</p>
+                <p>
+                    Головний герой, який прагне знайти вихід із лабіринту.
+                </p>
+            </div>
 
-</div>
+            <!-- NEWT -->
 
-<div class="card">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/mazerunner/images/0/0f/Newt_TMR.png" alt="Ньют">
 
-<img src="https://picsum.photos/300/400?random=2" alt="Ньют">
+                <h3>Ньют</h3>
 
-<h3>Ньют</h3>
+                <p>
+                    Розумний та справедливий друг Томаса.
+                </p>
+            </div>
 
-<p>
-Розумний та справедливий друг Томаса.
-</p>
+            <!-- MINHO -->
 
-</div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/mazerunner/images/7/7d/Minho.jpg" alt="Мінхо">
 
-<div class="card">
+                <h3>Мінхо</h3>
 
-<img src="https://picsum.photos/300/400?random=3" alt="Мінхо">
+                <p>
+                    Найкращий бігун лабіринту та хоробрий лідер.
+                </p>
+            </div>
 
-<h3>Мінхо</h3>
+            <!-- GALLY -->
 
-<p>
-Найкращий бігун лабіринту та хоробрий лідер.
-</p>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/mazerunner/images/5/52/Gally.jpg" alt="Галлі">
 
-</div>
+                <h3>Галлі</h3>
 
-<div class="card">
+                <p>
+                    Не довіряє Томасу та боїться змін.
+                </p>
+            </div>
 
-<img src="https://picsum.photos/300/400?random=4" alt="Галлі">
+            <!-- TERESA -->
 
-<h3>Галлі</h3>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/mazerunner/images/9/90/Teresa.jpg" alt="Тереза">
 
-<p>
-Не довіряє Томасу та боїться змін.
-</p>
+                <h3>Тереза</h3>
 
-</div>
+                <p>
+                    Єдина дівчина у Глейді, яка має зв’язок із Томасом.
+                </p>
+            </div>
 
-</div>
+            <!-- CHUCK -->
 
-</section>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/mazerunner/images/4/48/Chuck.jpg" alt="Чак">
 
-<section class="labyrinth" id="labyrinth">
+                <h3>Чак</h3>
 
-<h2 class="section-title">Таємничий лабіринт</h2>
+                <p>
+                    Молодий і веселий хлопець, друг Томаса.
+                </p>
+            </div>
 
-<p>
-Лабіринт — це величезна система стін, які щодня змінюють своє положення.
-Вночі там з’являються грівери — страшні істоти.
-Щоб вижити, герої повинні знайти шлях до свободи.
-</p>
+        </div>
 
-</section>
+    </section>
+
+    <section class="labyrinth" id="labyrinth">
+
+        <h2 class="section-title">Таємниця лабіринту</h2>
+
+        <p>
+            Лабіринт — це величезна система стін, які постійно змінюють своє положення.
+            Вночі там з’являються грівери — страшні істоти.
+            Щоб вижити, герої повинні знайти шлях до свободи
+            та дізнатися правду про експеримент.
+        </p>
+
+    </section>
 
 </main>
 
 <footer>
 
-<p>Фан-сайт The Maze Runner | 2026</p>
+    <p>Фан-сайт The Maze Runner | 2026</p>
 
 </footer>
 
