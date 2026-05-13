@@ -4,261 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Maze Runner</title>
+    <title>Game Site</title>
 
-    <style>
-
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:#f4f4f4;
-            color:#222;
-        }
-
-        /* HEADER */
-
-        header{
-            background:linear-gradient(90deg,#5a0000,#c2185b,#ff9800);
-            color:white;
-
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            flex-wrap:wrap;
-
-            padding:20px;
-        }
-
-        header h2{
-            margin:0;
-        }
-
-        /* MENU */
-
-        .menu-list{
-            display:flex;
-            gap:15px;
-            list-style:none;
-            padding:0;
-            margin:0;
-        }
-
-        .menu-list a{
-            text-decoration:none;
-            color:white;
-            background:rgba(255,255,255,0.2);
-            padding:10px 15px;
-            border-radius:10px;
-            transition:0.3s;
-        }
-
-        .menu-list a:hover{
-            background:white;
-            color:black;
-        }
-
-        /* HERO */
-
-        .hero{
-            text-align:center;
-            padding:50px 20px;
-            background:#fff8f0;
-        }
-
-        .hero h1{
-            font-size:48px;
-            color:#7a0000;
-        }
-
-        .hero p{
-            max-width:900px;
-            margin:auto;
-            line-height:1.8;
-            font-size:20px;
-        }
-
-        .button{
-            display:inline-block;
-            margin-top:25px;
-            padding:14px 22px;
-            background:#7a0000;
-            color:white;
-            text-decoration:none;
-            border-radius:10px;
-        }
-
-        .button:hover{
-            background:#c2185b;
-        }
-
-        /* SECTION TITLE */
-
-        .section-title{
-            text-align:center;
-            font-size:40px;
-            color:#7a0000;
-            margin-top:50px;
-        }
-
-        /* CARDS */
-
-        .cards{
-            display:flex;
-            justify-content:center;
-            gap:25px;
-            flex-wrap:wrap;
-            padding:30px;
-        }
-
-        .card{
-            width:240px;
-            background:white;
-            border-radius:15px;
-            overflow:hidden;
-
-            box-shadow:0 4px 10px rgba(0,0,0,0.2);
-
-            transition:0.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-8px);
-        }
-
-        .card img{
-            width:100%;
-            height:300px;
-            object-fit:cover;
-        }
-
-        .card h3{
-            text-align:center;
-            color:#7a0000;
-            margin-bottom:10px;
-        }
-
-        .card p{
-            text-align:center;
-            padding:0 15px 20px;
-            line-height:1.5;
-        }
-
-        /* LABYRINTH */
-
-        .labyrinth{
-            background:#e8d7c5;
-            padding:40px;
-            text-align:center;
-            line-height:1.8;
-            margin-top:30px;
-        }
-
-        /* FOOTER */
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- HEADER -->
 
-    <h2>Той, хто біжить лабіринтом</h2>
+    <header>
 
-    <nav>
-        <ul class="menu-list">
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#heroes">Герої</a></li>
-            <li><a href="#labyrinth">Лабіринт</a></li>
-        </ul>
-    </nav>
+        <h2>Game World</h2>
 
-</header>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="#hero">Головна</a></li>
+                <li><a href="#characters">Персонажі</a></li>
+                <li><a href="#about">Про гру</a></li>
+            </ul>
+        </nav>
 
-<main>
+    </header>
 
-    <section class="hero" id="home">
+    <!-- HERO -->
 
-        <h1>Ласкаво просимо у світ Maze Runner</h1>
+    <section class="hero" id="hero">
 
-        <p>
-            «Лабіринт змінюється щодня. Чи зможеш ти знайти вихід?»
-            Томас прокидається у загадковому місці без спогадів про минуле.
-            Разом з іншими підлітками він потрапляє до Глейду —
-            місця, оточеного величезним смертельно небезпечним лабіринтом.
-        </p>
+        <div class="hero-text">
 
-        <a href="#heroes" class="button">
-            Познайомитися з героями
-        </a>
+            <h1>Ласкаво просимо!</h1>
+
+            <p>
+                Досліджуй світ, знайомся з персонажами
+                та відкривай нові пригоди.
+            </p>
+
+            <a href="#" class="play-btn">Грати</a>
+
+        </div>
+
+        <!-- головне фото -->
+        <img src="tomas.jpg" alt="Hero image">
 
     </section>
 
-    <section id="heroes">
+    <!-- CHARACTERS -->
 
-        <h2 class="section-title">Головні герої</h2>
+    <section id="characters">
+
+        <h2>Персонажі</h2>
 
         <div class="cards">
 
-            <!-- THOMAS -->
-
             <div class="card">
 
-                <img src="https://static.wikia.nocookie.net/mazerunner/images/9/97/Thomas_1.jpg/revision/latest/scale-to-width-down/250?cb=20140323202152">
+                <img src="nyut.jpg" alt="Nyut">
 
-                <h3>Томас</h3>
-
-                <p>
-                    Головний герой, який прагне знайти вихід із лабіринту.
-                </p>
+                <h3>Nyut</h3>
 
             </div>
 
-            <!-- NEWT -->
-
             <div class="card">
 
-                <img src="https://static.wikia.nocookie.net/mazerunner/images/0/0f/Newt_TMR.png">
+                <img src="galli.jpg" alt="Galli">
 
-                <h3>Ньют</h3>
-
-                <p>
-                    Розумний та справедливий друг Томаса.
-                </p>
+                <h3>Galli</h3>
 
             </div>
 
-            <!-- MINHO -->
-
             <div class="card">
 
-                <img src="https://static.wikia.nocookie.net/mazerunner/images/7/7d/Minho.jpg">
+                <img src="mincho.jpg" alt="Mincho">
 
-                <h3>Мінхо</h3>
-
-                <p>
-                    Найкращий бігун лабіринту та хоробрий лідер.
-                </p>
-
-            </div>
-
-            <!-- GALLY -->
-
-            <div class="card">
-
-                <img src="https://static.wikia.nocookie.net/mazerunner/images/2/2f/Gally_2.png/revision/latest/scale-to-width-down/250?cb=20140927114218">
-
-                <h3>Галлі</h3>
-
-                <p>
-                    Не довіряє Томасу та боїться змін.
-                </p>
+                <h3>Mincho</h3>
 
             </div>
 
@@ -266,28 +85,32 @@
 
     </section>
 
-    <section class="labyrinth" id="labyrinth">
+    <!-- ABOUT -->
 
-        <h2 class="section-title">Таємниця лабіринту</h2>
+    <section id="about">
 
-        <p>
-            Лабіринт — це величезна система стін, які постійно змінюють своє положення.
-            Вночі там з’являються грівери — страшні істоти.
-            Щоб вижити, герої повинні знайти шлях до свободи
-            та дізнатися правду про експеримент.
-        </p>
+        <h2>Про гру</h2>
+
+        <ul id="players">
+            <li>Пригоди</li>
+            <li>Бої</li>
+            <li>Дослідження світу</li>
+        </ul>
 
     </section>
 
-</main>
+    <!-- FOOTER -->
 
-<footer>
+    <footer id="maps">
 
-    <p>
-        Фан-сайт The Maze Runner | 2026
-    </p>
+        <h2>Дякую за перегляд</h2>
 
-</footer>
+        <p>
+            Створено як навчальний проєкт 2026
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
